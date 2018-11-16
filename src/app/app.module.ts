@@ -11,7 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Proveedor1Provider } from '../providers/proveedor1/proveedor1';
-
+import {HttpClientModule} from '@angular/common/http'; //permite conectar con un cliente externo
 @NgModule({
   declarations: [
     MyApp,
@@ -22,6 +22,7 @@ import { Proveedor1Provider } from '../providers/proveedor1/proveedor1';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
